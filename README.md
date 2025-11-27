@@ -61,17 +61,27 @@ The challenge places a significant emphasis on data collection and utilization, 
 
 ## Evaluation and Ranking
 
+Task metrics are designed such that higher values indicate better performance. The overall score is computed via a weighted average of normalized metrics across all tasks. For each task $T_i$, the metric $M_i$ (e.g., Acc, iWER, mAP) is normalized using:
 
+$$
+\hat{M}_{i} = \frac{M_{i} - M_{i}^{\min}}{M_{i}^{\max} - M_{i}^{\min}}
+$$
 
-![image-20251125164456254](fig/eval_rank.png)
+where $\hat{M_{i}}$ is the normalized metric, and $M_{i}^{\min}$ and $M_{i}^{\max}$ are the worst and best possible values of $M_i$, respectively.
 
+The final score $S$ is calculated as:
 
+$$
+S = \frac{\sum_{i=1}^{N_{\text{task}}} n_i \hat{M}_i}{\sum_{i=1}^{N_{\text{task}}} n_i}
+$$
+
+where $N_{\text{task}}$ is the total number of tasks, $n_i$ is a task-specific weight determined by the committee. Weights are set to prioritize open-ended generation tasks due to their higher difficulty.
 
 ## How to Participate
 
 ### Registration
 
-To participate, registration is required. Please complete the [registration form](https://docs.google.com/forms/d/1oaTnhh0HVX8K2oRdHKXsnyZfBWb7F6Oj8xZ6yAiMI74/edit) before **January 17, 2026**. 
+To participate, registration is required. Please complete the [registration form](https://docs.google.com/forms/d/1oaTnhh0HVX8K2oRdHKXsnyZfBWb7F6Oj8xZ6yAiMI74/edit) before **January 15, 2026**. 
 
 Further questions, please send Email to: 2026interspeech-aecc@dataoceanai.com
 
@@ -93,7 +103,7 @@ Participants are also required to submit a technical report along with their sub
 
 ## Important Dates
 
-- **November 21, 2025**: Challenge announcement
+- **December 15, 2025**: Challenge announcement
 
 - **February 12 11:59 AM AoE, 2026**: Submissions Deadline
 
@@ -103,5 +113,5 @@ Participants are also required to submit a technical report along with their sub
 
 ## More Details
 
-The more detailed description of the challenge can be found in **The Interspeech 2026 Audio Encoder Capability Challenge for Large Audio Language Models** paper.
+The more detailed description of the challenge can be found in **The Interspeech 2026 Audio Encoder Capability Challenge for Large Audio Language Models** [paper](The_Interspeech_2026_Audio_Encoder_Capability_Challenge_for_Large_Audio_Language_Models.pdf).
 
