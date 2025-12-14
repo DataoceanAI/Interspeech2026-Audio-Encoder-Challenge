@@ -94,8 +94,8 @@ Participants are also required to submit a technical report along with their sub
 
 - **December 15, 2025**: Challenge announcement
 
-- **February 12 11:59 AM AoE, 2026**: Submissions Deadline
+- **February 12 23:59 AoE, 2026**: Submissions Deadline
 
 - **February 20, 2026**: Final Ranking Announced
 
-- **February 25 11:59 PM AoE, 2026**: Paper Submission Deadline
+- **February 25 23:59 AoE, 2026**: Paper Submission Deadline
