@@ -24,13 +24,12 @@ The preprocessed datasets are available on Hugging Face. The number of labels # 
 | ---------- | ------------------------ | ----------------------------- | ---------- | ----: |
 | **Speech** | Speech Commands          | Keyword spotting              | Acc        |    30 |
 |            | LibriCount               | Speaker counting              | Acc        |    11 |
-|            | VoxLingua107             | Language identification       | Acc        |    33 |
+|            | VoxLingua33              | Language identification       | Acc        |    33 |
 |            | VoxCeleb1-Binary         | Binary speaker identification | Acc        |     2 |
-|            | ASVSpoof2015             | Spoofing detection            | Acc        |     2 |
+|            | ASVspoof2015             | Spoofing detection            | Acc        |     2 |
 |            | Fluent Speech Commands   | Intent classification         | Acc        |    31 |
 |            | VocalSound               | Non-speech sounds             | Acc        |     6 |
 |            | CREMA-D                  | Emotion recognition           | Acc        |     5 |
-|            | ASV2015                  | Spoofing detection            | Acc        |     2 |
 | **Sound**  | ESC-50                   | Environment classification    | Acc        |    50 |
 |            | FSD50k                   | Sound event detection         | mAP        |   200 |
 |            | UrbanSound 8k            | Urban sound classification    | Acc        |    10 |
