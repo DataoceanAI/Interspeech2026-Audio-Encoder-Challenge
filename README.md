@@ -100,6 +100,6 @@ Participants are also required to submit a technical report along with their sub
 
 - **February 12 23:59 AoE, 2026**: Submissions Deadline
 
-- **February 20, 2026**: Final Ranking Announced
+- **~~February 20~~ March 9, 2026**: Final Ranking Announced
 
 - **February 25 23:59 AoE, 2026**: Paper Submission Deadline
