@@ -1,5 +1,8 @@
 # The Interspeech 2026 Audio Encoder Capability Challenge for Large Audio Language Models
 
+## 🏆 Challenge Results
+[https://dataoceanai.github.io/Interspeech2026-Audio-Encoder-Challenge/docs/result.html](https://dataoceanai.github.io/Interspeech2026-Audio-Encoder-Challenge/docs/result.html)
+
 ## Overview
 
 The **Interspeech 2026 Audio Encoder Capability Challenge**, hosted by Xiaomi, University of Surrey, Tsinghua University and Dataocean AI, evaluates pre-trained audio encoders as front-end modules for LALMs, focusing on their ability to understand and represent audio semantics in complex scenarios.
