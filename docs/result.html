@@ -150,7 +150,8 @@
         <h2>Track A Results</h2>
         <p class="hint">Click on column headers to sort the table</p>
         <p class="hint">* Asterisk indicates hidden tasks</p>
-        <p class="hint">Since some technical reports were anonymously submitted to Interspeech, they will be made public at a later time.</p>
+        <p class="hint">Since some technical reports were anonymously submitted to Interspeech, they will be made public
+            at a later time.</p>
         <div class="table-container">
             <table id="sheet1-table">
                 <thead>
@@ -1611,23 +1612,879 @@
         <h2>Track B Results</h2>
         <p class="hint">Click on column headers to sort the table</p>
         <p class="hint">* Asterisk indicates hidden tasks</p>
-        <!-- <table id="sheet2-table">
-            <thead>
-            </thead>
-            <tbody>
-            </tbody>
-        </table> -->
-        <p>Track B results will be available soon.</p>
+        <p class="hint">Since some technical reports were anonymously submitted to Interspeech, they will be made public
+            at a later time.</p>
+        <div class="table-container">
+            <table id="sheet2-table">
+                <thead>
+                    <tr>
+                        
+                        <th onclick="sortTable(this, 0)"
+                            class=" ">
+                            Team</th>
+                        
+                        <th onclick="sortTable(this, 1)"
+                            class=" ">
+                            Affiliation</th>
+                        
+                        <th onclick="sortTable(this, 2)"
+                            class=" ">
+                            Technical Report</th>
+                        
+                        <th onclick="sortTable(this, 3)"
+                            class=" ">
+                            (Public + Hidden) / 2</th>
+                        
+                        <th onclick="sortTable(this, 4)"
+                            class=" ">
+                            Public test result</th>
+                        
+                        <th onclick="sortTable(this, 5)"
+                            class=" ">
+                            Hidden test result</th>
+                        
+                        <th onclick="sortTable(this, 6)"
+                            class="sub-task ">
+                            aishell-1</th>
+                        
+                        <th onclick="sortTable(this, 7)"
+                            class="sub-task ">
+                            clotho</th>
+                        
+                        <th onclick="sortTable(this, 8)"
+                            class="sub-task ">
+                            librispeech</th>
+                        
+                        <th onclick="sortTable(this, 9)"
+                            class="sub-task ">
+                            mecat</th>
+                        
+                        <th onclick="sortTable(this, 10)"
+                            class="sub-task ">
+                            songdescriber</th>
+                        
+                        <th onclick="sortTable(this, 11)"
+                            class="sub-task hidden-task">
+                            aishell-6*</th>
+                        
+                        <th onclick="sortTable(this, 12)"
+                            class="sub-task hidden-task">
+                            libriheavy*</th>
+                        
+                        <th onclick="sortTable(this, 13)"
+                            class="sub-task hidden-task">
+                            musiccaps*</th>
+                        
+                        <th onclick="sortTable(this, 14)"
+                            class="sub-task hidden-task">
+                            tacos*</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        
+                        <td>AICIS</td>
+                        
+                        <td>Iqra University</td>
+                        
+                        <td><span title="To preserve anonymity for Interspeech double-blind review, technical reports will be made publicly available at a later date." style="cursor: help; color: #888;">PDF</span></td>
+                        
+                        <td>0.1763</td>
+                        
+                        <td>0.1963</td>
+                        
+                        <td>0.1563</td>
+                        
+                        <td>0.0000</td>
+                        
+                        <td>0.1290</td>
+                        
+                        <td>0.0000</td>
+                        
+                        <td>0.4560</td>
+                        
+                        <td>0.3963</td>
+                        
+                        <td>0.0410</td>
+                        
+                        <td>0.0000</td>
+                        
+                        <td>0.4382</td>
+                        
+                        <td>0.1460</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        
+                        <td>CORE</td>
+                        
+                        <td>Indian Institute of Science (IISc) Bengaluru</td>
+                        
+                        <td><span title="To preserve anonymity for Interspeech double-blind review, technical reports will be made publicly available at a later date." style="cursor: help; color: #888;">PDF</span></td>
+                        
+                        <td>0.3029</td>
+                        
+                        <td>0.3431</td>
+                        
+                        <td>0.2627</td>
+                        
+                        <td>0.0000</td>
+                        
+                        <td>0.3551</td>
+                        
+                        <td>0.2572</td>
+                        
+                        <td>0.6026</td>
+                        
+                        <td>0.5008</td>
+                        
+                        <td>0.0000</td>
+                        
+                        <td>0.3130</td>
+                        
+                        <td>0.4480</td>
+                        
+                        <td>0.2898</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        
+                        <td>Dark Reunion</td>
+                        
+                        <td>Zhejiang University</td>
+                        
+                        <td><span title="To preserve anonymity for Interspeech double-blind review, technical reports will be made publicly available at a later date." style="cursor: help; color: #888;">PDF</span></td>
+                        
+                        <td>0.4712</td>
+                        
+                        <td>0.5234</td>
+                        
+                        <td>0.4189</td>
+                        
+                        <td>0.3238</td>
+                        
+                        <td>0.4284</td>
+                        
+                        <td>0.7397</td>
+                        
+                        <td>0.6479</td>
+                        
+                        <td>0.4772</td>
+                        
+                        <td>0.1798</td>
+                        
+                        <td>0.6630</td>
+                        
+                        <td>0.4820</td>
+                        
+                        <td>0.3510</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        
+                        <td>DKU-WHU</td>
+                        
+                        <td>Duke Kunshan University Wuhan University</td>
+                        
+                        <td><span title="To preserve anonymity for Interspeech double-blind review, technical reports will be made publicly available at a later date." style="cursor: help; color: #888;">PDF</span></td>
+                        
+                        <td>0.3953</td>
+                        
+                        <td>0.4462</td>
+                        
+                        <td>0.3445</td>
+                        
+                        <td>0.3584</td>
+                        
+                        <td>0.3443</td>
+                        
+                        <td>0.3947</td>
+                        
+                        <td>0.6274</td>
+                        
+                        <td>0.5062</td>
+                        
+                        <td>0.2520</td>
+                        
+                        <td>0.3783</td>
+                        
+                        <td>0.4570</td>
+                        
+                        <td>0.2907</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        
+                        <td>Echo bridge</td>
+                        
+                        <td>Chongqing university of posts and telecommunications</td>
+                        
+                        <td><span title="To preserve anonymity for Interspeech double-blind review, technical reports will be made publicly available at a later date." style="cursor: help; color: #888;">PDF</span></td>
+                        
+                        <td>0.4023</td>
+                        
+                        <td>0.4521</td>
+                        
+                        <td>0.3524</td>
+                        
+                        <td>0.3169</td>
+                        
+                        <td>0.4465</td>
+                        
+                        <td>0.3668</td>
+                        
+                        <td>0.6412</td>
+                        
+                        <td>0.4892</td>
+                        
+                        <td>0.2113</td>
+                        
+                        <td>0.3548</td>
+                        
+                        <td>0.4736</td>
+                        
+                        <td>0.3701</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        
+                        <td>audio eevee</td>
+                        
+                        <td>Nio Co., Ltd</td>
+                        
+                        <td><span title="To preserve anonymity for Interspeech double-blind review, technical reports will be made publicly available at a later date." style="cursor: help; color: #888;">PDF</span></td>
+                        
+                        <td>0.4857</td>
+                        
+                        <td>0.5482</td>
+                        
+                        <td>0.4232</td>
+                        
+                        <td>0.4453</td>
+                        
+                        <td>0.4317</td>
+                        
+                        <td>0.7641</td>
+                        
+                        <td>0.6533</td>
+                        
+                        <td>0.4467</td>
+                        
+                        <td>0.2182</td>
+                        
+                        <td>0.6860</td>
+                        
+                        <td>0.4470</td>
+                        
+                        <td>0.3414</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        
+                        <td>EncodexPOL</td>
+                        
+                        <td>Samsung R&D Institute Poland</td>
+                        
+                        <td><span title="To preserve anonymity for Interspeech double-blind review, technical reports will be made publicly available at a later date." style="cursor: help; color: #888;">PDF</span></td>
+                        
+                        <td>0.6230</td>
+                        
+                        <td>0.6630</td>
+                        
+                        <td>0.5830</td>
+                        
+                        <td>0.8661</td>
+                        
+                        <td>0.4745</td>
+                        
+                        <td>0.8331</td>
+                        
+                        <td>0.6724</td>
+                        
+                        <td>0.4689</td>
+                        
+                        <td>0.6818</td>
+                        
+                        <td>0.7528</td>
+                        
+                        <td>0.4810</td>
+                        
+                        <td>0.4164</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        
+                        <td>Fusion SAMUN</td>
+                        
+                        <td>Institute of Information Science, Academia Sinica</td>
+                        
+                        <td><span title="To preserve anonymity for Interspeech double-blind review, technical reports will be made publicly available at a later date." style="cursor: help; color: #888;">PDF</span></td>
+                        
+                        <td>0.4509</td>
+                        
+                        <td>0.4990</td>
+                        
+                        <td>0.4027</td>
+                        
+                        <td>0.4649</td>
+                        
+                        <td>0.4307</td>
+                        
+                        <td>0.4453</td>
+                        
+                        <td>0.6625</td>
+                        
+                        <td>0.4918</td>
+                        
+                        <td>0.3628</td>
+                        
+                        <td>0.4322</td>
+                        
+                        <td>0.4539</td>
+                        
+                        <td>0.3620</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        
+                        <td>IASP Lab</td>
+                        
+                        <td>Wuhan University</td>
+                        
+                        <td><span title="To preserve anonymity for Interspeech double-blind review, technical reports will be made publicly available at a later date." style="cursor: help; color: #888;">PDF</span></td>
+                        
+                        <td>0.4683</td>
+                        
+                        <td>0.5187</td>
+                        
+                        <td>0.4178</td>
+                        
+                        <td>0.4778</td>
+                        
+                        <td>0.4935</td>
+                        
+                        <td>0.4482</td>
+                        
+                        <td>0.6639</td>
+                        
+                        <td>0.5100</td>
+                        
+                        <td>0.3500</td>
+                        
+                        <td>0.4190</td>
+                        
+                        <td>0.4861</td>
+                        
+                        <td>0.4162</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        
+                        <td>LvDouSha</td>
+                        
+                        <td>Jianghan University</td>
+                        
+                        <td><span title="To preserve anonymity for Interspeech double-blind review, technical reports will be made publicly available at a later date." style="cursor: help; color: #888;">PDF</span></td>
+                        
+                        <td>0.4447</td>
+                        
+                        <td>0.4920</td>
+                        
+                        <td>0.3975</td>
+                        
+                        <td>0.4717</td>
+                        
+                        <td>0.3937</td>
+                        
+                        <td>0.4555</td>
+                        
+                        <td>0.6525</td>
+                        
+                        <td>0.4864</td>
+                        
+                        <td>0.3650</td>
+                        
+                        <td>0.4450</td>
+                        
+                        <td>0.4610</td>
+                        
+                        <td>0.3191</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        
+                        <td>JustForFun</td>
+                        
+                        <td>Individual Researcher</td>
+                        
+                        <td><span title="To preserve anonymity for Interspeech double-blind review, technical reports will be made publicly available at a later date." style="cursor: help; color: #888;">PDF</span></td>
+                        
+                        <td>0.3300</td>
+                        
+                        <td>0.2973</td>
+                        
+                        <td>0.3627</td>
+                        
+                        <td>0.0123</td>
+                        
+                        <td>0.2449</td>
+                        
+                        <td>0.3283</td>
+                        
+                        <td>0.5365</td>
+                        
+                        <td>0.3647</td>
+                        
+                        <td>0.0410</td>
+                        
+                        <td>0.7290</td>
+                        
+                        <td>0.4510</td>
+                        
+                        <td>0.2299</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        
+                        <td>MIT SLS</td>
+                        
+                        <td>Massachusetts Institute of Technology</td>
+                        
+                        <td><span title="To preserve anonymity for Interspeech double-blind review, technical reports will be made publicly available at a later date." style="cursor: help; color: #888;">PDF</span></td>
+                        
+                        <td>0.6149</td>
+                        
+                        <td>0.6600</td>
+                        
+                        <td>0.5697</td>
+                        
+                        <td>0.7579</td>
+                        
+                        <td>0.4699</td>
+                        
+                        <td>0.9217</td>
+                        
+                        <td>0.6683</td>
+                        
+                        <td>0.4823</td>
+                        
+                        <td>0.5460</td>
+                        
+                        <td>0.8740</td>
+                        
+                        <td>0.4720</td>
+                        
+                        <td>0.3870</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        
+                        <td>NTU_BIO</td>
+                        
+                        <td>National Taiwan University</td>
+                        
+                        <td><span title="To preserve anonymity for Interspeech double-blind review, technical reports will be made publicly available at a later date." style="cursor: help; color: #888;">PDF</span></td>
+                        
+                        <td>0.4197</td>
+                        
+                        <td>0.4706</td>
+                        
+                        <td>0.3688</td>
+                        
+                        <td>0.3844</td>
+                        
+                        <td>0.3583</td>
+                        
+                        <td>0.5291</td>
+                        
+                        <td>0.6177</td>
+                        
+                        <td>0.4636</td>
+                        
+                        <td>0.2670</td>
+                        
+                        <td>0.4440</td>
+                        
+                        <td>0.4630</td>
+                        
+                        <td>0.3010</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        
+                        <td>NTUST_NLPLab</td>
+                        
+                        <td>National Taiwan University of Science and Technology</td>
+                        
+                        <td><span title="To preserve anonymity for Interspeech double-blind review, technical reports will be made publicly available at a later date." style="cursor: help; color: #888;">PDF</span></td>
+                        
+                        <td>0.6200</td>
+                        
+                        <td>0.6609</td>
+                        
+                        <td>0.5790</td>
+                        
+                        <td>0.8600</td>
+                        
+                        <td>0.4199</td>
+                        
+                        <td>0.8747</td>
+                        
+                        <td>0.6446</td>
+                        
+                        <td>0.5055</td>
+                        
+                        <td>0.6880</td>
+                        
+                        <td>0.8190</td>
+                        
+                        <td>0.4590</td>
+                        
+                        <td>0.3500</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        
+                        <td>Pinch</td>
+                        
+                        <td>Pinch</td>
+                        
+                        <td><span title="To preserve anonymity for Interspeech double-blind review, technical reports will be made publicly available at a later date." style="cursor: help; color: #888;">PDF</span></td>
+                        
+                        <td>0.1633</td>
+                        
+                        <td>0.1912</td>
+                        
+                        <td>0.1354</td>
+                        
+                        <td>0.0000</td>
+                        
+                        <td>0.1140</td>
+                        
+                        <td>0.0000</td>
+                        
+                        <td>0.3773</td>
+                        
+                        <td>0.4646</td>
+                        
+                        <td>0.0409</td>
+                        
+                        <td>0.0000</td>
+                        
+                        <td>0.4340</td>
+                        
+                        <td>0.0668</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        
+                        <td>RBG-AI</td>
+                        
+                        <td>Resilience Business Grids and Kitami Institute of Technology</td>
+                        
+                        <td><span title="To preserve anonymity for Interspeech double-blind review, technical reports will be made publicly available at a later date." style="cursor: help; color: #888;">PDF</span></td>
+                        
+                        <td>0.1537</td>
+                        
+                        <td>0.1684</td>
+                        
+                        <td>0.1390</td>
+                        
+                        <td>0.0000</td>
+                        
+                        <td>0.0875</td>
+                        
+                        <td>0.0000</td>
+                        
+                        <td>0.3264</td>
+                        
+                        <td>0.4283</td>
+                        
+                        <td>0.0238</td>
+                        
+                        <td>0.0038</td>
+                        
+                        <td>0.4600</td>
+                        
+                        <td>0.0683</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        
+                        <td>SAMoVA</td>
+                        
+                        <td>Institut de Recherche en Informatique de Toulouse (IRIT)</td>
+                        
+                        <td><span title="To preserve anonymity for Interspeech double-blind review, technical reports will be made publicly available at a later date." style="cursor: help; color: #888;">PDF</span></td>
+                        
+                        <td>0.2281</td>
+                        
+                        <td>0.2793</td>
+                        
+                        <td>0.1770</td>
+                        
+                        <td>0.0000</td>
+                        
+                        <td>0.3761</td>
+                        
+                        <td>0.0000</td>
+                        
+                        <td>0.5523</td>
+                        
+                        <td>0.4679</td>
+                        
+                        <td>0.0286</td>
+                        
+                        <td>0.0000</td>
+                        
+                        <td>0.4450</td>
+                        
+                        <td>0.2345</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        
+                        <td>THU-HSCI-2</td>
+                        
+                        <td>Tsinghua Shenzhen International Graduate School</td>
+                        
+                        <td><span title="To preserve anonymity for Interspeech double-blind review, technical reports will be made publicly available at a later date." style="cursor: help; color: #888;">PDF</span></td>
+                        
+                        <td>0.6496</td>
+                        
+                        <td>0.6962</td>
+                        
+                        <td>0.6031</td>
+                        
+                        <td>0.8980</td>
+                        
+                        <td>0.4909</td>
+                        
+                        <td>0.9241</td>
+                        
+                        <td>0.6805</td>
+                        
+                        <td>0.4873</td>
+                        
+                        <td>0.6721</td>
+                        
+                        <td>0.7937</td>
+                        
+                        <td>0.5125</td>
+                        
+                        <td>0.4340</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        
+                        <td>THUVoice</td>
+                        
+                        <td>Tsinghua University</td>
+                        
+                        <td><span title="To preserve anonymity for Interspeech double-blind review, technical reports will be made publicly available at a later date." style="cursor: help; color: #888;">PDF</span></td>
+                        
+                        <td>0.6299</td>
+                        
+                        <td>0.7014</td>
+                        
+                        <td>0.5583</td>
+                        
+                        <td>0.9094</td>
+                        
+                        <td>0.4789</td>
+                        
+                        <td>0.9247</td>
+                        
+                        <td>0.6966</td>
+                        
+                        <td>0.4973</td>
+                        
+                        <td>0.5830</td>
+                        
+                        <td>0.7366</td>
+                        
+                        <td>0.5155</td>
+                        
+                        <td>0.3983</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        
+                        <td>trans-encoder</td>
+                        
+                        <td>TRANSSION</td>
+                        
+                        <td><span title="To preserve anonymity for Interspeech double-blind review, technical reports will be made publicly available at a later date." style="cursor: help; color: #888;">PDF</span></td>
+                        
+                        <td>0.6590</td>
+                        
+                        <td>0.7021</td>
+                        
+                        <td>0.6159</td>
+                        
+                        <td>0.9004</td>
+                        
+                        <td>0.4901</td>
+                        
+                        <td>0.9344</td>
+                        
+                        <td>0.6753</td>
+                        
+                        <td>0.5101</td>
+                        
+                        <td>0.7170</td>
+                        
+                        <td>0.8250</td>
+                        
+                        <td>0.4940</td>
+                        
+                        <td>0.4277</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        
+                        <td>WaWu</td>
+                        
+                        <td>Waseda University, Wuhan University</td>
+                        
+                        <td><span title="To preserve anonymity for Interspeech double-blind review, technical reports will be made publicly available at a later date." style="cursor: help; color: #888;">PDF</span></td>
+                        
+                        <td>0.6534</td>
+                        
+                        <td>0.6859</td>
+                        
+                        <td>0.6210</td>
+                        
+                        <td>0.8941</td>
+                        
+                        <td>0.4264</td>
+                        
+                        <td>0.9264</td>
+                        
+                        <td>0.6814</td>
+                        
+                        <td>0.5011</td>
+                        
+                        <td>0.7940</td>
+                        
+                        <td>0.8950</td>
+                        
+                        <td>0.4684</td>
+                        
+                        <td>0.3265</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        
+                        <td>WindSpeak</td>
+                        
+                        <td>NIO</td>
+                        
+                        <td><span title="To preserve anonymity for Interspeech double-blind review, technical reports will be made publicly available at a later date." style="cursor: help; color: #888;">PDF</span></td>
+                        
+                        <td>0.4001</td>
+                        
+                        <td>0.4561</td>
+                        
+                        <td>0.3441</td>
+                        
+                        <td>0.2471</td>
+                        
+                        <td>0.3603</td>
+                        
+                        <td>0.5911</td>
+                        
+                        <td>0.6208</td>
+                        
+                        <td>0.4610</td>
+                        
+                        <td>0.1460</td>
+                        
+                        <td>0.5045</td>
+                        
+                        <td>0.4186</td>
+                        
+                        <td>0.3072</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        
+                        <td>XJTLU</td>
+                        
+                        <td>NUPT-AIC-Xi’an Jiaotong-Liverpool University</td>
+                        
+                        <td><span title="To preserve anonymity for Interspeech double-blind review, technical reports will be made publicly available at a later date." style="cursor: help; color: #888;">PDF</span></td>
+                        
+                        <td>0.2098</td>
+                        
+                        <td>0.2424</td>
+                        
+                        <td>0.1772</td>
+                        
+                        <td>0.0000</td>
+                        
+                        <td>0.3356</td>
+                        
+                        <td>0.0000</td>
+                        
+                        <td>0.4199</td>
+                        
+                        <td>0.4566</td>
+                        
+                        <td>0.0315</td>
+                        
+                        <td>0.0000</td>
+                        
+                        <td>0.4405</td>
+                        
+                        <td>0.2369</td>
+                        
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <script>
         let currentSort = {
-            column: -1,
-            direction: 'none'
+            'sheet1-table': {
+                column: -1,
+                direction: 'none'
+            },
+            'sheet2-table': {
+                column: -1,
+                direction: 'none'
+            }
         };
 
         function sortTable(th, colIndex) {
             const table = th.closest('table');
+            const tableId = table.id;
             const tbody = table.querySelector('tbody');
             const rows = Array.from(tbody.querySelectorAll('tr'));
             const isNumeric = !isNaN(parseFloat(rows[0].children[colIndex].textContent.trim()));
@@ -1641,8 +2498,8 @@
 
             // Determine new sort direction
             let newDir;
-            if (currentSort.column === colIndex) {
-                newDir = currentSort.direction === 'asc' ? 'desc' : 'asc';
+            if (currentSort[tableId].column === colIndex) {
+                newDir = currentSort[tableId].direction === 'asc' ? 'desc' : 'asc';
             } else {
                 newDir = isNumeric ? 'desc' : 'asc';
             }
@@ -1661,7 +2518,7 @@
             });
 
             // Update UI
-            currentSort = {
+            currentSort[tableId] = {
                 column: colIndex,
                 direction: newDir
             };
@@ -1673,26 +2530,28 @@
         }
 
         document.addEventListener('DOMContentLoaded', () => {
-            const table = document.getElementById('sheet1-table');
-            if (!table) return;
-            const tbody = table.querySelector('tbody');
-            if (!tbody) return;
-            const firstRow = tbody.querySelector('tr');
-            if (!firstRow) return;
+            ['sheet1-table', 'sheet2-table'].forEach(tableId => {
+                const table = document.getElementById(tableId);
+                if (!table) return;
+                const tbody = table.querySelector('tbody');
+                if (!tbody) return;
+                const firstRow = tbody.querySelector('tr');
+                if (!firstRow) return;
 
-            let targetCol = -1;
-            for (let i = 0; i < firstRow.children.length; i++) {
-                const cellText = firstRow.children[i].textContent.trim();
-                if (cellText !== '' && !isNaN(parseFloat(cellText))) {
-                    targetCol = i;
-                    break;
+                let targetCol = -1;
+                for (let i = 0; i < firstRow.children.length; i++) {
+                    const cellText = firstRow.children[i].textContent.trim();
+                    if (cellText !== '' && !isNaN(parseFloat(cellText))) {
+                        targetCol = i;
+                        break;
+                    }
                 }
-            }
 
-            if (targetCol !== -1) {
-                const th = table.querySelectorAll('th')[targetCol];
-                sortTable(th, targetCol);
-            }
+                if (targetCol !== -1) {
+                    const th = table.querySelectorAll('th')[targetCol];
+                    sortTable(th, targetCol);
+                }
+            });
         });
     </script>
 </body>
