@@ -106,3 +106,18 @@ Participants are also required to submit a technical report along with their sub
 - **~~February 20~~ March 9, 2026**: Final Ranking Announced
 
 - **February 25 23:59 AoE, 2026**: Paper Submission Deadline
+
+
+## Citation
+
+```
+@misc{dinkel2026interspeech2026audioencoder,
+      title={The Interspeech 2026 Audio Encoder Capability Challenge for Large Audio Language Models}, 
+      author={Heinrich Dinkel and Jiahao Zhou and Guanbo Wang and Yadong Niu and Junbo Zhang and Yufeng Hao and Ying Liu and Ke Li and Wenwu Wang and Zhiyong Wu and Jian Luan},
+      year={2026},
+      eprint={2603.22728},
+      archivePrefix={arXiv},
+      primaryClass={cs.SD},
+      url={https://arxiv.org/abs/2603.22728}, 
+}
+```
